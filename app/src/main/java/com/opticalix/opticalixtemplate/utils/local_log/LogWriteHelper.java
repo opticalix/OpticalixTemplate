@@ -64,11 +64,7 @@ public class LogWriteHelper {
         Date date = new Date();
         String strLog = LOG_FORMAT.format(date);
 
-        StringBuffer sb = new StringBuffer(strLog);
-        sb.append(' ');
-        sb.append(msg);
-        sb.append('\n');
-        strLog = sb.toString();
+        strLog = strLog + ' ' + msg + '\n';
 
         //write into file
         FileWriter fileWriter = new FileWriter(fileToWrite, true);

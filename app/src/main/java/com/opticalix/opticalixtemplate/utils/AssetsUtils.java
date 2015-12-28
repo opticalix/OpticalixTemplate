@@ -33,6 +33,6 @@ public class AssetsUtils {
      * @throws IOException
      */
     public static Object getObject(Context context, String fullPath, Class clazz) throws IOException {
-        return GsonUtils.getGson().fromJson(new InputStreamReader(open(context, fullPath)), clazz);
+        return GsonUtils.getSimpleGson().fromJson(new InputStreamReader(open(context, fullPath)), clazz);
     }
 }

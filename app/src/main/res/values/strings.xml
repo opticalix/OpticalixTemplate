@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">OpticalixTemplate</string>
+    <string name="loading_now">loading…</string>
 </resources>
