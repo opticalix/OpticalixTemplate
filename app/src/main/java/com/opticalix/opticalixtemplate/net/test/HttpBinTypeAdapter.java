@@ -76,17 +76,4 @@ public class HttpBinTypeAdapter extends TypeAdapter<HttpBinModel> {
         }
     }
 
-    private HttpBinModel handleObject(HttpBinModel model, JsonReader in, String name) throws IOException {
-        if (in.nextName().equals(name)) {
-            in.beginObject();
-            String args = "";
-            while (in.hasNext()) {
-                if (!TextUtils.isEmpty(args)) args += ", ";
-                args += in.nextName() + "=" + in.nextString();
-            }
-
-            in.endObject();
-        }
-        return model;
-    }
 }

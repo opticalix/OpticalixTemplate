@@ -9,6 +9,7 @@ import com.opticalix.opticalixtemplate.R;
 import com.opticalix.opticalixtemplate.component.base.BaseActivity;
 import com.opticalix.opticalixtemplate.model.GlobalConfig;
 import com.opticalix.opticalixtemplate.utils.AssetsUtils;
+import com.opticalix.opticalixtemplate.utils.GsonUtils;
 import com.opticalix.opticalixtemplate.utils.LogUtils;
 
 import butterknife.Bind;
@@ -28,6 +29,8 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener {
         mTvDemo.setOnClickListener(this);
 
         loadConfig();
+
+        GsonUtils.annotataionGson();
     }
 
     @Override

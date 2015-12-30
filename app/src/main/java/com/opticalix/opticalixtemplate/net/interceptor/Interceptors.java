@@ -1,10 +1,7 @@
 package com.opticalix.opticalixtemplate.net.interceptor;
 
-import com.opticalix.opticalixtemplate.net.HttpConfig;
-import com.opticalix.opticalixtemplate.net.HttpUtils;
 import com.opticalix.opticalixtemplate.utils.LogUtils;
 import com.squareup.okhttp.Interceptor;
-import com.squareup.okhttp.OkHttpClient;
 import com.squareup.okhttp.Request;
 import com.squareup.okhttp.Response;
 

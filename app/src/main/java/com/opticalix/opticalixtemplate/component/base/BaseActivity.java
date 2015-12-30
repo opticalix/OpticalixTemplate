@@ -51,7 +51,7 @@ public abstract class BaseActivity extends AppCompatActivity implements ISimpleL
         super.onResume();
 
         if(enableFullLoadingWhenAccessingNetwork()){
-            HttpUtils.getOkHttpClient().interceptors().add(LOGIN_INTERCEPTOR);
+            HttpUtils.getOkHttpClient().interceptors().add(LOADING_INTERCEPTOR);
         }
         LogUtils.d(this, "onResume taskId=" + getTaskId());
     }
@@ -67,7 +67,7 @@ public abstract class BaseActivity extends AppCompatActivity implements ISimpleL
         super.onStop();
 
         if(enableFullLoadingWhenAccessingNetwork()){
-            HttpUtils.getOkHttpClient().interceptors().remove(LOGIN_INTERCEPTOR);
+            HttpUtils.getOkHttpClient().interceptors().remove(LOADING_INTERCEPTOR);
         }
         LogUtils.d(this, "onStop taskId=" + getTaskId());
     }
@@ -226,7 +226,7 @@ public abstract class BaseActivity extends AppCompatActivity implements ISimpleL
         return true;
     }
 
-    public final Interceptor LOGIN_INTERCEPTOR = new Interceptor() {
+    public final Interceptor LOADING_INTERCEPTOR = new Interceptor() {
         @Override
         public Response intercept(Interceptor.Chain chain) throws IOException {
             Request request = chain.request();
