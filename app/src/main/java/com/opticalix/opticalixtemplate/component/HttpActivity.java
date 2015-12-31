@@ -30,6 +30,7 @@ import butterknife.ButterKnife;
 
 /**
  * Created by opticalix@gmail.com on 15/12/28.
+ * todo 改为fragment
  */
 public class HttpActivity extends BaseActivity implements View.OnClickListener {
     @Bind(R.id.tv_1)

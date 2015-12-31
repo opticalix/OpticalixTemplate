@@ -12,8 +12,8 @@ public class TargetUtils {
 
 
     /**
-     * new Task or update task
-     * @param missionTag  tag of this task, must be unique
+     * new target or update target
+     * @param missionTag  tag of this target, must be unique
      * @param ownPos      bit position
      * @param targetCount total count
      * @return true indicate finish
@@ -28,6 +28,14 @@ public class TargetUtils {
         boolean ret = target == (1 << targetCount) - 1;
         if (ret) targetMap.remove(missionTag);//clear
         return ret;
+    }
+
+    /**
+     * remove target
+     * @param missionTag tag of this target, must be unique
+     */
+    public static void removeTarget(String missionTag){
+        targetMap.remove(missionTag);
     }
 
 }

@@ -2,11 +2,13 @@ package com.opticalix.opticalixtemplate.component;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.view.View;
 import android.widget.TextView;
 
 import com.opticalix.opticalixtemplate.R;
 import com.opticalix.opticalixtemplate.component.base.BaseActivity;
+import com.opticalix.opticalixtemplate.component.frg.DemoPagerFragment;
 import com.opticalix.opticalixtemplate.model.GlobalConfig;
 import com.opticalix.opticalixtemplate.utils.AssetsUtils;
 import com.opticalix.opticalixtemplate.utils.GsonUtils;
@@ -38,9 +40,10 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener {
         return false;
     }
 
-    private void enterDemoActivity() {
-        Intent intent = new Intent(this, DemoActivity.class);
-        startActivity(intent);
+    private void enterDemoActivity(Class<? extends Fragment> fragmentClass) {
+        Intent demo = new Intent(this, DemoFrgContainerActivity.class);
+        demo.putExtra("class", fragmentClass);//change demo class
+        startActivity(demo);
     }
 
     private void loadConfig() {
@@ -63,7 +66,9 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener {
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.tv_button:
-                enterDemoActivity();
+//                Intent intent = new Intent(this, HttpActivity.class);
+//                startActivity(intent);
+                enterDemoActivity(DemoPagerFragment.class);
                 break;
         }
     }

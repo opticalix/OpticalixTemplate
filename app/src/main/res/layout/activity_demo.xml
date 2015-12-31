@@ -19,4 +19,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="OkHttp"/>
+    <TextView
+        android:id="@+id/tv_2"
+        android:background="@color/colorPrimary"
+        android:padding="10dp"
+        android:textColor="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DemoContainer"/>
 </LinearLayout>

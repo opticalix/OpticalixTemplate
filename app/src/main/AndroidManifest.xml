@@ -20,8 +20,8 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".component.DemoActivity"/>
         <activity android:name=".component.HttpActivity"/>
+        <activity android:name=".component.DemoFrgContainerActivity"/>
     </application>
 
 </manifest>
