@@ -13,12 +13,13 @@ import com.opticalix.opticalixtemplate.R;
 import com.opticalix.opticalixtemplate.adapter.DemoFragmentPagerAdapter;
 import com.opticalix.opticalixtemplate.adapter.DemoFragmentStatePagerAdapter;
 import com.opticalix.opticalixtemplate.adapter.DemoPagerAdapter;
+import com.opticalix.opticalixtemplate.component.base.BaseFragment;
 import com.opticalix.opticalixtemplate.utils.LogUtils;
 
 /**
  * Created by opticalix@gmail.com on 15/12/31.
  */
-public class DemoPagerFragment extends Fragment {
+public class DemoPagerFragment extends BaseFragment {
 
     private ViewPager mViewPager;
     private DemoFragmentPagerAdapter mDemoFragmentPagerAdapter;

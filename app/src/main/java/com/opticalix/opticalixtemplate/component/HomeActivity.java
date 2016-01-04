@@ -8,6 +8,7 @@ import android.widget.TextView;
 
 import com.opticalix.opticalixtemplate.R;
 import com.opticalix.opticalixtemplate.component.base.BaseActivity;
+import com.opticalix.opticalixtemplate.component.frg.DemoCustomViewFragment;
 import com.opticalix.opticalixtemplate.component.frg.DemoPagerFragment;
 import com.opticalix.opticalixtemplate.model.GlobalConfig;
 import com.opticalix.opticalixtemplate.utils.AssetsUtils;
@@ -68,7 +69,7 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener {
             case R.id.tv_button:
 //                Intent intent = new Intent(this, HttpActivity.class);
 //                startActivity(intent);
-                enterDemoActivity(DemoPagerFragment.class);
+                enterDemoActivity(DemoCustomViewFragment.class);
                 break;
         }
     }

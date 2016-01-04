@@ -6,20 +6,20 @@ import com.opticalix.opticalixtemplate.utils.TargetUtils;
 
 /**
  * Optimise create process.
- * Suit for Activity which need init with data.
- * Created by opticalix@gmail.com on 15/12/31.
+ * Suit for Fragment which need init with data.
+ * Created by opticalix@gmail.com on 16/1/4.
  */
-public abstract class BaseLoadActivity extends BaseActivity {
+public abstract class BaseLoadFragment extends BaseFragment{
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    public void onActivityCreated(Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
         showLoading();
         onPrepareData();
     }
 
     @Override
-    protected void onDestroy() {
+    public void onDestroy() {
         super.onDestroy();
         TargetUtils.removeTarget(this.getClass().getSimpleName());
     }
@@ -46,7 +46,7 @@ public abstract class BaseLoadActivity extends BaseActivity {
      */
     protected void finishOneTask(int taskBit){
         if(TargetUtils.contributeTarget(this.getClass().getSimpleName(), taskBit, buildInitTaskCount())){
-            mHandler.post(new Runnable() {
+            getBaseActivity().getHandler().post(new Runnable() {
                 @Override
                 public void run() {
                     //need run in main thread

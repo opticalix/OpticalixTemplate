@@ -130,6 +130,9 @@ public abstract class BaseActivity extends AppCompatActivity implements ISimpleL
     }
 
 
+    public Handler getHandler(){
+        return mHandler;
+    }
     /*
     --------------------
     Loading
