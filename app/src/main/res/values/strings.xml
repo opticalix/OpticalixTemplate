@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">OpticalixTemplate</string>
     <string name="loading_now">loading…</string>
+
+    <string-array name="drop_down_titles">
+        <item>title1</item>
+        <item>title2</item>
+    </string-array>
 </resources>

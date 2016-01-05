@@ -32,8 +32,6 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener {
         mTvDemo.setOnClickListener(this);
 
         loadConfig();
-
-        GsonUtils.annotataionGson();
     }
 
     @Override

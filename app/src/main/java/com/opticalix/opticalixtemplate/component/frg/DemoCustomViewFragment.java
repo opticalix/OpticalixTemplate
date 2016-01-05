@@ -1,22 +1,19 @@
 package com.opticalix.opticalixtemplate.component.frg;
 
 import android.os.Bundle;
-import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 
 import com.opticalix.opticalixtemplate.R;
 import com.opticalix.opticalixtemplate.component.base.BaseFragment;
+import com.opticalix.opticalixtemplate.utils.DemoUtils;
 import com.opticalix.opticalixtemplate.utils.LogUtils;
 import com.opticalix.opticalixtemplate.view.DemoCustomView;
 import com.opticalix.opticalixtemplate.view.DropdownView;
-
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Test my custom-view
@@ -45,32 +42,25 @@ public class DemoCustomViewFragment extends BaseFragment {
         });
 
         mDropdownView = (DropdownView) inflate.findViewById(R.id.dropdown_view);
-        mDropdownView.attachListView(createSimpleListView(), createSimpleListView());
+        Button button = (Button) inflate.findViewById(R.id.button);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                LogUtils.d("I'm button got clicked");
+            }
+        });
+        mDropdownView.attachListView(DemoUtils.createSimpleListView(getContext(), 10, 1), DemoUtils.createSimpleListView(getContext(), 5, 2));
+        mDropdownView.setOnDropdownItemClickListener(new DropdownView.OnDropdownItemClickListener() {
+            @Override
+            public void onItemClick(View v, int whichList, int position) {
+                LogUtils.d(DemoCustomViewFragment.this, "which=" + whichList + ", pos=" + position);
+            }
+        });
+
+        mDropdownView.setWeightRatio(2,1);
         return inflate;
     }
 
-    @NonNull
-    private ListView createSimpleListView() {
-        ListView listView = new ListView(getContext());
-        List<String> data = new ArrayList<>();
-        data.add("1");
-        data.add("2");
-        data.add("3");
-        data.add("4");
-        data.add("5");
-        data.add("1");
-        data.add("2");
-        data.add("3");
-        data.add("4");
-        data.add("5");
-        data.add("1");
-        data.add("2");
-        data.add("3");
-        data.add("4");
-        data.add("5");
-        listView.setAdapter(new ArrayAdapter<>(getContext(), R.layout.view_loading, R.id.tv_loading_msg, data));
-        return listView;
-    }
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
