@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="dropdown-lib-1.0.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.opticalix.dropdownmenu/dropdown-lib/1.0.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.opticalix.dropdownmenu/dropdown-lib/1.0.0/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.opticalix.dropdownmenu/dropdown-lib/1.0.0/e36fdac3b2438edc2e021d1500df005b1bf2672/dropdown-lib-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

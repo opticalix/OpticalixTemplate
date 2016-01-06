@@ -19,27 +19,25 @@
         android:layout_height="wrap_content"
         android:visibility="gone"/>
 
-    <com.opticalix.opticalixtemplate.view.DropdownView
+    <com.opticalix.dropdown_lib.DropdownView
         app:drop_down_list_count="2"
         app:drop_down_title_text="@array/drop_down_titles"
-        app:drop_down_title_background="#0f000f"
-        app:drop_down_title_text_color="#fff003"
-        app:drop_down_title_text_size="12sp"
-        app:drop_down_duration="100"
-        app:drop_down_list_height="100dp"
-        app:drop_down_title_padding_top="10dp"
-        app:drop_down_title_padding_bottom="30dp"
+        app:drop_down_title_background="@android:color/white"
+        app:drop_down_title_text_color="@color/common_text_444444"
+        app:drop_down_title_text_size="10sp"
+        app:drop_down_duration="200"
+        app:drop_down_list_height="150dp"
+        app:drop_down_title_padding_top="7dp"
+        app:drop_down_title_padding_bottom="7dp"
 
-        app:drop_down_arrow_up="@mipmap/ic_arrow_down"
         app:drop_down_title_drawable_padding="10dp"
-        app:drop_down_enable_dim="false"
+        app:drop_down_enable_dim="true"
 
         android:id="@+id/dropdown_view"
-        android:background="#dbdbdb"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/custom_view">
 
-    </com.opticalix.opticalixtemplate.view.DropdownView>
+    </com.opticalix.dropdown_lib.DropdownView>
 
 </RelativeLayout>

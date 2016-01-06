@@ -2,18 +2,19 @@ package com.opticalix.opticalixtemplate.component.frg;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ListView;
 
+import com.opticalix.dropdown_lib.DropdownView;
 import com.opticalix.opticalixtemplate.R;
 import com.opticalix.opticalixtemplate.component.base.BaseFragment;
 import com.opticalix.opticalixtemplate.utils.DemoUtils;
 import com.opticalix.opticalixtemplate.utils.LogUtils;
 import com.opticalix.opticalixtemplate.view.DemoCustomView;
-import com.opticalix.opticalixtemplate.view.DropdownView;
 
 /**
  * Test my custom-view
@@ -49,15 +50,22 @@ public class DemoCustomViewFragment extends BaseFragment {
                 LogUtils.d("I'm button got clicked");
             }
         });
-        mDropdownView.attachListView(DemoUtils.createSimpleListView(getContext(), 10, 1), DemoUtils.createSimpleListView(getContext(), 5, 2));
+        ListView simpleListView1 = DemoUtils.createSimpleListView(getContext(), 10, 0);
+        ListView simpleListView2 = DemoUtils.createSimpleListView(getContext(), 5, 1);
+        simpleListView1.setBackgroundResource(android.R.color.white);
+        simpleListView2.setBackgroundResource(android.R.color.white);
+        mDropdownView.attachListView(simpleListView1, simpleListView2);
         mDropdownView.setOnDropdownItemClickListener(new DropdownView.OnDropdownItemClickListener() {
             @Override
             public void onItemClick(View v, int whichList, int position) {
                 LogUtils.d(DemoCustomViewFragment.this, "which=" + whichList + ", pos=" + position);
+                mDropdownView.setTitleText(whichList, whichList + "-" + position);
+                mDropdownView.setTitleTextColor(whichList, 0xff0b86e5);
+                mDropdownView.setTitleTextSize(whichList, TypedValue.COMPLEX_UNIT_SP, 8);
+
+                mDropdownView.setArrowDownDrawable(R.mipmap.ic_launcher);
             }
         });
-
-        mDropdownView.setWeightRatio(2,1);
         return inflate;
     }
 
