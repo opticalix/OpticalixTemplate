@@ -2,6 +2,7 @@ package com.opticalix.opticalixtemplate.component;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.view.Menu;
 import android.widget.FrameLayout;
 
 import com.opticalix.opticalixtemplate.R;
@@ -52,5 +53,10 @@ public class DemoFrgContainerActivity extends BaseActivity {
 
         }
 
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        return false;
     }
 }

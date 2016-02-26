@@ -16,26 +16,33 @@
     </layouts>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="bitmap" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="DEBUG" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c2992004-93e5-4acd-804d-1c1f1234f970" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_23_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/dropdown_lib_1_0_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/recyclerview_v7_23_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/support_annotations_23_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/support_v4_23_1_1.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_23_0_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_annotations_23_0_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_v4_23_0_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/view/DropdownView.java" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/model/BaseModel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/component/frg/DemoImageLoadFragment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/component/frg/DemoMenuFragment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/adapter/DemoSimpleTextListAdapter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/bitmap/ImageResizer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/adapter/OpBaseAdapter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/bitmap/OpxLruCache.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/adapter/PagedListAdapter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/model/PagedListInfo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/model/SimpleText.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/menu/demo.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/frg_image_load.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/frg_menu.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/dropdown_lib_1_0_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/dropdown_lib_1_0_1.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/component/frg/DemoCustomViewFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/component/frg/DemoCustomViewFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/component/DemoFrgContainerActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/component/DemoFrgContainerActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/utils/DemoUtils.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/utils/DemoUtils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/model/GlobalConfig.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/model/GlobalConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/component/HomeActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/component/HomeActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/attrs.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/attrs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/frg_custom_view.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/frg_custom_view.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="OpticalixTemplate.iws" />
@@ -64,38 +71,118 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <file leaf-file-name="DemoImageLoadFragment.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/component/frg/DemoImageLoadFragment.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="36" column="59" selection-start-line="36" selection-start-column="59" selection-end-line="36" selection-end-column="59" />
+              <caret line="90" column="50" selection-start-line="90" selection-start-column="50" selection-end-line="90" selection-end-column="50" />
+              <folding>
+                <element signature="e#6161#6340#0" expanded="true" />
+                <element signature="e#6339#6340#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ViewGroup.java" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-23/android/view/ViewGroup.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#295920#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ViewParent.java" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-23/android/view/ViewParent.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+              <folding>
+                <element signature="e#0#27298#0" expanded="false" />
+                <element signature="imports" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="View.java" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-23/android/view/View.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="18760" column="22" selection-start-line="18760" selection-start-column="22" selection-end-line="18760" selection-end-column="22" />
+              <folding>
+                <element signature="e#425905#425906#0" expanded="true" />
+                <element signature="e#425935#425936#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="String.java" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-23/java/lang/String.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="1536" column="74" selection-start-line="1536" selection-start-column="74" selection-end-line="1536" selection-end-column="74" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaseApplication.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/BaseApplication.java">
+      <file leaf-file-name="Formatter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-23/java/util/Formatter.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+              <caret line="234" column="31" selection-start-line="234" selection-start-column="31" selection-end-line="234" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DemoCustomViewFragment.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/component/frg/DemoCustomViewFragment.java">
+      <file leaf-file-name="LruCache.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/Library/Android/sdk/extras/android/m2repository/com/android/support/support-v4/23.1.1/support-v4-23.1.1-sources.jar!/android/support/v4/util/LruCache.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.532294">
-              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+            <state vertical-scroll-proportion="-8.666667">
+              <caret line="42" column="21" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="21" />
+              <folding>
+                <element signature="e#9087#9088#0" expanded="true" />
+                <element signature="e#9114#9115#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ImageResizer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/bitmap/ImageResizer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1357#1516#0" expanded="true" />
-                <element signature="e#1515#1516#0" expanded="true" />
-                <element signature="e#2316#2906#0" expanded="true" />
-                <element signature="e#2905#2906#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.iml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/app.iml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="105" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LogUtils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/utils/LogUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="59" column="36" selection-start-line="59" selection-start-column="36" selection-end-line="59" selection-end-column="36" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -106,9 +193,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="layoutResourceFile" />
+        <option value="valueResourceFile" />
         <option value="resourceFile" />
         <option value="Class" />
-        <option value="valueResourceFile" />
       </list>
     </option>
   </component>
@@ -565,9 +652,9 @@
                 <option name="name" value="prepareComAndroidSupportSupportV42311Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Prepare com.opticalix.dropdownmenu:dropdown-lib:1.0.0" />
+                <option name="description" value="Prepare com.opticalix.dropdownmenu:dropdown-lib:1.0.1" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="prepareComOpticalixDropdownmenuDropdownLib100Library" />
+                <option name="name" value="prepareComOpticalixDropdownmenuDropdownLib101Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Prepare com.squareup.leakcanary:leakcanary-android:1.3.1" />
@@ -1137,9 +1224,9 @@
                 <option name="name" value="prepareComAndroidSupportSupportV42311Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Prepare com.opticalix.dropdownmenu:dropdown-lib:1.0.0" />
+                <option name="description" value="Prepare com.opticalix.dropdownmenu:dropdown-lib:1.0.1" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
-                <option name="name" value="prepareComOpticalixDropdownmenuDropdownLib100Library" />
+                <option name="name" value="prepareComOpticalixDropdownmenuDropdownLib101Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Prepare com.squareup.leakcanary:leakcanary-android:1.3.1" />
@@ -1334,7 +1421,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="4353624297000" />
+        <entry key="$PROJECT_DIR$" value="4353780859000" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -1555,7 +1642,7 @@
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/de.greenrobot/greendao/2.0.0/5f49dd477c1621dfaf0f7fe5d755fe4f07526af2/greendao-2.0.0.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp/okhttp/2.5.0/4de2b4ed3445c37ec1720a7d214712e845a24636/okhttp-2.5.0.jar" />
                             <option value="$USER_HOME$/Library/Android/sdk/extras/android/m2repository/com/android/support/recyclerview-v7/23.1.1/recyclerview-v7-23.1.1.aar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.opticalix.dropdownmenu/dropdown-lib/1.0.0/b71685f27457fa785fd5e0f7535d8efd3d0a964d/dropdown-lib-1.0.0.aar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.opticalix.dropdownmenu/dropdown-lib/1.0.1/7cc3423e8ce0ce4aeb9cd76f902c9706c54a96e0/dropdown-lib-1.0.1.aar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.6.0/98476622f10715998eacf9240d6b479f12c66143/okio-1.6.0.jar" />
                             <option value="$USER_HOME$/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.1.1/support-annotations-23.1.1.jar" />
                             <option value="$USER_HOME$/Library/Android/sdk/extras/android/m2repository/com/android/support/support-v4/23.1.1/support-v4-23.1.1.aar" />
@@ -1701,22 +1788,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/model/httpbin/HttpBinModel.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/component/StartActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_start.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/net/CustomFailCode.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/net/test/HttpBinModel.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/BaseApplication.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/net/HttpConfig.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/net/request/SampleRequest.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/net/callback/BaseJsonUICallback.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/loader/base/DataFailType.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/net/HttpException.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/loader/SampleDataLoader.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/net/request/PostSampleRequest.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_okhttp.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/net/request/GetSampleRequest.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/net/HttpUtils.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/net/interceptor/Interceptors.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/net/test/HttpBinTypeAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/utils/GsonUtils.java" />
@@ -1725,7 +1796,6 @@
         <option value="$PROJECT_DIR$/b.txt" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_demo_container.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_demo.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/component/DemoFrgContainerActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/adapter/DemoPagerAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/adapter/DemoFragmentPagerAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/component/HttpActivity.java" />
@@ -1744,14 +1814,31 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/view/FilterView.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/selector_arrow_up_and_down.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/component/HomeActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/utils/DemoUtils.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/view/DropdownView.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/component/frg/DemoCustomViewFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/frg_custom_view.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/attrs.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/model/GlobalConfig.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/adapter/DemoListAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/model/SimpleText.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/model/BaseModel.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/adapter/DemoSimpleTextListAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/utils/DemoUtils.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/adapter/OpBaseAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/model/PagedListInfo.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/adapter/PagedListAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/menu.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/menu/demo.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/frg_menu.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/component/DemoFrgContainerActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/component/frg/DemoMenuFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/component/frg/DemoCustomViewFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/frg_image_load.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/bitmap/OpxLruCache.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/component/HomeActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/component/frg/DemoImageLoadFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/bitmap/ImageResizer.java" />
       </list>
     </option>
   </component>
@@ -1864,6 +1951,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -1920,30 +2008,31 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.folding" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="show.do.not.copy.http.proxy.settings.to.gradle" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="android.project.structure.last.selected" value="app" />
+    <property name="android.project.structure.last.selected" value="SDK Location" />
     <property name="android.project.structure.proportion" value="0.15" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="192.168.56.101:5555" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="92520c0" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="4.1.2" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
-    <property name="DEBUGGABLE_DEVICE" value="genymotion-samsung_galaxy_s2___4_1_1___api_16___480x800-192.168.56.101:5555" />
+    <property name="DEBUGGABLE_DEVICE" value="xiaomi-mi_note_lte-92520c0" />
     <property name="DEBUGGABLE_PROCESS" value="com.opticalix.opticalixtemplate" />
     <property name="SHOW_ALL_PROCESSES" value="false" />
     <property name="FullScreen" value="false" />
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager2.WIDTH" value="224" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Github/android-Ultra-Pull-To-Refresh" />
     <property name="extractMethod.generateAnnotations" value="true" />
+    <property name="SearchEverywhereHistoryKey" value="project def&#9;ACTION&#9;TemplateProjectSettingsGroup&#10;project de&#9;ACTION&#9;TemplateProjectSettingsGroup&#10;project str&#9;ACTION&#9;null" />
+    <property name="restartRequiresConfirmation" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -1954,11 +2043,14 @@
       <recent name="com.opticalix.opticalixtemplate.component.base" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi" />
       <recent name="$PROJECT_DIR$/app/src/main/res/layout" />
+      <recent name="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi" />
       <recent name="$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/loader/base" />
       <recent name="$PROJECT_DIR$/app/libs" />
       <recent name="$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/net/callback" />
+    </key>
+    <key name="android.template.packageName">
+      <recent name="values" />
     </key>
   </component>
   <component name="RunManager" selected="Android Application.app">
@@ -2182,7 +2274,13 @@
       <option name="project" value="LOCAL" />
       <updated>1451991681039</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="test dropdown view">
+      <created>1452071308588</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1452071308588</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2195,45 +2293,45 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32628798" sideWeight="0.49421966" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32760897" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5984148" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297568" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3976222" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893" sideWeight="0.50578034" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36988112" sideWeight="0.49710983" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3685601" sideWeight="0.49710983" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3285151" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3197425" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2825465" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298292" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959612" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24892704" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32628798" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39878234" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32893" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5984148" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893" sideWeight="0.50578034" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3685601" sideWeight="0.49710983" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36988112" sideWeight="0.49710983" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3197425" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959612" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2825465" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24892704" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298292" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -2241,15 +2339,15 @@
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32628798" sideWeight="0.49421966" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32628798" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32760897" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297568" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3976222" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3285151" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39878234" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -2275,177 +2373,497 @@
     <MESSAGE value="viewPager demo" />
     <MESSAGE value="first add dropdownView" />
     <MESSAGE value="update dropdownView" />
-    <option name="LAST_COMMIT_MESSAGE" value="update dropdownView" />
+    <MESSAGE value="test dropdown view" />
+    <option name="LAST_COMMIT_MESSAGE" value="test dropdown view" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="38" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/component/frg/DemoImageLoadFragment.java</url>
+          <line>152</line>
+          <properties />
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="45" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Remote">
         <watch expression="mCovering.getVisibility()" language="JAVA" custom="" />
+        <watch expression="viewGroup.getWidth()" />
       </configuration>
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-23/android/support/v4/view/ViewPager.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/adapter/OpBaseAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="2903" column="31" selection-start-line="2903" selection-start-column="18" selection-end-line="2903" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Library/Android/sdk/extras/android/m2repository/com/android/support/support-v4/23.0.1/support-v4-23.0.1-sources.jar!/android/support/v4/view/PagerAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.07912688">
-          <caret line="277" column="0" selection-start-line="277" selection-start-column="0" selection-end-line="277" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-23/android/app/Instrumentation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1498" column="30" selection-start-line="1498" selection-start-column="30" selection-end-line="1498" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/core/org/gradle/api/tasks/TaskContainer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="134" column="9" selection-start-line="134" selection-start-column="9" selection-end-line="134" selection-end-column="9" />
+          <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
           <folding>
-            <element signature="e#0#9700#0" expanded="false" />
+            <element signature="e#703#704#0" expanded="false" />
+            <element signature="e#743#744#0" expanded="false" />
+            <element signature="e#1000#1001#0" expanded="false" />
+            <element signature="e#1031#1032#0" expanded="false" />
+            <element signature="e#2216#2217#0" expanded="false" />
+            <element signature="e#2249#2250#0" expanded="false" />
+            <element signature="e#2454#2455#0" expanded="false" />
+            <element signature="e#2493#2494#0" expanded="false" />
+            <element signature="e#2454#2455#0" expanded="false" />
+            <element signature="e#2493#2494#0" expanded="false" />
+            <element signature="e#2799#2800#0" expanded="false" />
+            <element signature="e#2847#2848#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/model/PagedListInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="67" column="39" selection-start-line="67" selection-start-column="39" selection-end-line="67" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#574#575#0" expanded="false" />
+            <element signature="e#604#605#0" expanded="false" />
+            <element signature="e#643#644#0" expanded="false" />
+            <element signature="e#673#674#0" expanded="false" />
+            <element signature="e#1473#1474#0" expanded="false" />
+            <element signature="e#1504#1505#0" expanded="false" />
+            <element signature="e#1540#1541#0" expanded="false" />
+            <element signature="e#1603#1604#0" expanded="false" />
+            <element signature="e#1636#1637#0" expanded="false" />
+            <element signature="e#1701#1702#0" expanded="false" />
+            <element signature="e#1735#1736#0" expanded="false" />
+            <element signature="e#1780#1781#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-23/android/app/Activity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3004" column="19" selection-start-line="3004" selection-start-column="19" selection-end-line="3004" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/utils/ScreenUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+          <folding>
             <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/core/org/gradle/api/Task.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4297408">
-          <caret line="308" column="0" selection-start-line="308" selection-start-column="0" selection-end-line="308" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/component/base/BaseFullLoadingFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16371077">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/component/base/BaseLoadActivity.java">
+    <entry file="jar://$USER_HOME$/Library/Android/sdk/extras/android/m2repository/com/android/support/support-v4/23.1.1/support-v4-23.1.1-sources.jar!/android/support/v4/app/Fragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/component/base/BaseFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <caret line="621" column="34" selection-start-line="621" selection-start-column="34" selection-end-line="621" selection-end-column="34" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#481#482#0" expanded="false" />
-            <element signature="e#531#532#0" expanded="false" />
-            <element signature="e#657#658#0" expanded="false" />
-            <element signature="e#708#709#0" expanded="false" />
-            <element signature="e#3038#3039#0" expanded="false" />
-            <element signature="e#3062#3063#0" expanded="false" />
-            <element signature="e#3117#3118#0" expanded="false" />
-            <element signature="e#3171#3172#0" expanded="false" />
+            <element signature="e#56030#56031#0" expanded="false" />
+            <element signature="e#56058#56059#0" expanded="false" />
+            <element signature="e#59320#59321#0" expanded="false" />
+            <element signature="e#59348#59349#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/component/frg/DemoPagerFragment.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/demo.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.21369295">
-          <caret line="21" column="51" selection-start-line="21" selection-start-column="51" selection-end-line="21" selection-end-column="51" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/frg_pager.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/component/frg/DemoCustomViewFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="57" column="15" selection-start-line="57" selection-start-column="15" selection-end-line="57" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/component/frg/DemoMenuFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/component/DemoFrgContainerActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3860846">
+          <caret line="36" column="50" selection-start-line="36" selection-start-column="50" selection-end-line="36" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-23/android/view/ContextMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="96" column="21" selection-start-line="96" selection-start-column="21" selection-end-line="96" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/model/BaseModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/platforms/android-23/data/res/layout/simple_list_item_1.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.793103">
+          <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
       <provider editor-type-id="android-designer">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/adapter/DemoSimpleTextListAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.553571">
-          <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="42" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/utils/DemoUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="37" column="73" selection-start-line="37" selection-start-column="73" selection-end-line="37" selection-end-column="73" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-23/android/graphics/drawable/Drawable.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/frg_menu.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="935" column="15" selection-start-line="935" selection-start-column="15" selection-end-line="935" selection-end-column="15" />
+        <state vertical-scroll-proportion="-5.625">
+          <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/component/base/BaseLoadFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-23/java/util/concurrent/atomic/AtomicInteger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="105" column="25" selection-start-line="105" selection-start-column="25" selection-end-line="105" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-23/android/app/ActivityThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2056" column="0" selection-start-line="2056" selection-start-column="0" selection-end-line="2056" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-23/android/view/Gravity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="55" column="28" selection-start-line="55" selection-start-column="28" selection-end-line="55" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-23/android/content/res/TypedArray.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/component/base/BaseActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-23/android/view/ViewRootImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6160" column="16" selection-start-line="6160" selection-start-column="16" selection-end-line="6160" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/view_loading.xml">
-      <provider selected="true" editor-type-id="android-designer">
+      <provider editor-type-id="android-designer">
         <state />
       </provider>
-      <provider editor-type-id="text-editor">
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/frg_image_load.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.107142">
+          <caret line="34" column="43" selection-start-line="34" selection-start-column="43" selection-end-line="34" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-23/android/graphics/Bitmap.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="1207" column="33" selection-start-line="1207" selection-start-column="21" selection-end-line="1207" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-23/java/lang/Runtime.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="651" column="23" selection-start-line="651" selection-start-column="23" selection-end-line="651" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-23/java/lang/Integer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="455" column="25" selection-start-line="455" selection-start-column="25" selection-end-line="455" selection-end-column="25" />
+          <folding>
+            <element signature="e#15478#15479#0" expanded="false" />
+            <element signature="e#15545#15546#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-23/java/security/MessageDigest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="275" column="18" selection-start-line="275" selection-start-column="18" selection-end-line="275" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/utils/local_log/Hash.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/bitmap/OpxLruCache.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#262#263#0" expanded="true" />
+            <element signature="e#335#336#0" expanded="true" />
+            <element signature="e#764#765#0" expanded="true" />
+            <element signature="e#814#815#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/net/request/GetSampleRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/net/test/HttpBinTypeAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/net/callback/BaseJsonCallback.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="41" column="28" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="28" />
+          <folding>
+            <element signature="e#1194#1195#0" expanded="false" />
+            <element signature="e#1242#1243#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/loader/SampleDataLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="62" column="36" selection-start-line="62" selection-start-column="27" selection-end-line="62" selection-end-column="36" />
+          <folding>
+            <element signature="e#2888#3022#0" expanded="false" />
+            <element signature="e#3021#3022#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-23/android/net/Uri.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="52" column="22" selection-start-line="52" selection-start-column="22" selection-end-line="52" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#75516#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#5864#5865#0" expanded="false" />
+            <element signature="e#5904#5905#0" expanded="false" />
+            <element signature="e#6365#6366#0" expanded="false" />
+            <element signature="e#6401#6402#0" expanded="false" />
+            <element signature="e#12046#12047#0" expanded="false" />
+            <element signature="e#12090#12091#0" expanded="false" />
+            <element signature="e#12228#12229#0" expanded="false" />
+            <element signature="e#12289#12290#0" expanded="false" />
+            <element signature="e#15350#15351#0" expanded="false" />
+            <element signature="e#15397#15398#0" expanded="false" />
+            <element signature="e#16713#16714#0" expanded="false" />
+            <element signature="e#16778#16779#0" expanded="false" />
+            <element signature="e#16819#16820#0" expanded="false" />
+            <element signature="e#16851#16852#0" expanded="false" />
+            <element signature="e#18875#18876#0" expanded="false" />
+            <element signature="e#18960#18961#0" expanded="false" />
+            <element signature="e#19016#19017#0" expanded="false" />
+            <element signature="e#19068#19069#0" expanded="false" />
+            <element signature="e#19117#19118#0" expanded="false" />
+            <element signature="e#19169#19170#0" expanded="false" />
+            <element signature="e#19914#19915#0" expanded="false" />
+            <element signature="e#19976#19977#0" expanded="false" />
+            <element signature="e#20016#20017#0" expanded="false" />
+            <element signature="e#20078#20079#0" expanded="false" />
+            <element signature="e#20320#20321#0" expanded="false" />
+            <element signature="e#20377#20378#0" expanded="false" />
+            <element signature="e#20419#20420#0" expanded="false" />
+            <element signature="e#20476#20477#0" expanded="false" />
+            <element signature="e#20525#20526#0" expanded="false" />
+            <element signature="e#20587#20588#0" expanded="false" />
+            <element signature="e#21606#21607#0" expanded="false" />
+            <element signature="e#21664#21665#0" expanded="false" />
+            <element signature="e#22310#22311#0" expanded="false" />
+            <element signature="e#22368#22369#0" expanded="false" />
+            <element signature="e#22613#22614#0" expanded="false" />
+            <element signature="e#22674#22675#0" expanded="false" />
+            <element signature="e#22887#22888#0" expanded="false" />
+            <element signature="e#22948#22949#0" expanded="false" />
+            <element signature="e#22984#22985#0" expanded="false" />
+            <element signature="e#23024#23025#0" expanded="false" />
+            <element signature="e#28359#28360#0" expanded="false" />
+            <element signature="e#28391#28392#0" expanded="false" />
+            <element signature="e#28656#28657#0" expanded="false" />
+            <element signature="e#28692#28693#0" expanded="false" />
+            <element signature="e#28731#28732#0" expanded="false" />
+            <element signature="e#28776#28777#0" expanded="false" />
+            <element signature="e#28813#28814#0" expanded="false" />
+            <element signature="e#28855#28856#0" expanded="false" />
+            <element signature="e#28911#28912#0" expanded="false" />
+            <element signature="e#28958#28959#0" expanded="false" />
+            <element signature="e#29007#29008#0" expanded="false" />
+            <element signature="e#29054#29055#0" expanded="false" />
+            <element signature="e#29094#29095#0" expanded="false" />
+            <element signature="e#29129#29130#0" expanded="false" />
+            <element signature="e#29176#29177#0" expanded="false" />
+            <element signature="e#29211#29212#0" expanded="false" />
+            <element signature="e#29246#29247#0" expanded="false" />
+            <element signature="e#29281#29282#0" expanded="false" />
+            <element signature="e#29323#29324#0" expanded="false" />
+            <element signature="e#29358#29359#0" expanded="false" />
+            <element signature="e#29394#29395#0" expanded="false" />
+            <element signature="e#29429#29430#0" expanded="false" />
+            <element signature="e#29472#29473#0" expanded="false" />
+            <element signature="e#29507#29508#0" expanded="false" />
+            <element signature="e#29546#29547#0" expanded="false" />
+            <element signature="e#29598#29599#0" expanded="false" />
+            <element signature="e#29644#29645#0" expanded="false" />
+            <element signature="e#29696#29697#0" expanded="false" />
+            <element signature="e#29745#29746#0" expanded="false" />
+            <element signature="e#29799#29800#0" expanded="false" />
+            <element signature="e#29845#29846#0" expanded="false" />
+            <element signature="e#29880#29881#0" expanded="false" />
+            <element signature="e#29919#29920#0" expanded="false" />
+            <element signature="e#29954#29955#0" expanded="false" />
+            <element signature="e#30000#30001#0" expanded="false" />
+            <element signature="e#30035#30036#0" expanded="false" />
+            <element signature="e#30070#30071#0" expanded="false" />
+            <element signature="e#30105#30106#0" expanded="false" />
+            <element signature="e#30137#30138#0" expanded="false" />
+            <element signature="e#30170#30171#0" expanded="false" />
+            <element signature="e#31622#31623#0" expanded="false" />
+            <element signature="e#31662#31663#0" expanded="false" />
+            <element signature="e#33356#33357#0" expanded="false" />
+            <element signature="e#33417#33418#0" expanded="false" />
+            <element signature="e#33763#33764#0" expanded="false" />
+            <element signature="e#33824#33825#0" expanded="false" />
+            <element signature="e#36892#36893#0" expanded="false" />
+            <element signature="e#36924#36925#0" expanded="false" />
+            <element signature="e#37264#37265#0" expanded="false" />
+            <element signature="e#37299#37300#0" expanded="false" />
+            <element signature="e#37338#37339#0" expanded="false" />
+            <element signature="e#37383#37384#0" expanded="false" />
+            <element signature="e#37420#37421#0" expanded="false" />
+            <element signature="e#37457#37458#0" expanded="false" />
+            <element signature="e#37692#37693#0" expanded="false" />
+            <element signature="e#37744#37745#0" expanded="false" />
+            <element signature="e#37793#37794#0" expanded="false" />
+            <element signature="e#37845#37846#0" expanded="false" />
+            <element signature="e#38768#38769#0" expanded="false" />
+            <element signature="e#38826#38827#0" expanded="false" />
+            <element signature="e#38873#38874#0" expanded="false" />
+            <element signature="e#38931#38932#0" expanded="false" />
+            <element signature="e#38973#38974#0" expanded="false" />
+            <element signature="e#39026#39027#0" expanded="false" />
+            <element signature="e#39061#39062#0" expanded="false" />
+            <element signature="e#39114#39115#0" expanded="false" />
+            <element signature="e#39150#39151#0" expanded="false" />
+            <element signature="e#39204#39205#0" expanded="false" />
+            <element signature="e#39247#39248#0" expanded="false" />
+            <element signature="e#39301#39302#0" expanded="false" />
+            <element signature="e#39340#39341#0" expanded="false" />
+            <element signature="e#39397#39398#0" expanded="false" />
+            <element signature="e#39443#39444#0" expanded="false" />
+            <element signature="e#39500#39501#0" expanded="false" />
+            <element signature="e#39549#39550#0" expanded="false" />
+            <element signature="e#39607#39608#0" expanded="false" />
+            <element signature="e#43701#43702#0" expanded="false" />
+            <element signature="e#43764#43765#0" expanded="false" />
+            <element signature="e#44083#44084#0" expanded="false" />
+            <element signature="e#44146#44147#0" expanded="false" />
+            <element signature="e#44892#44893#0" expanded="false" />
+            <element signature="e#44953#44954#0" expanded="false" />
+            <element signature="e#45076#45077#0" expanded="false" />
+            <element signature="e#45137#45138#0" expanded="false" />
+            <element signature="e#45371#45372#0" expanded="false" />
+            <element signature="e#45438#45439#0" expanded="false" />
+            <element signature="e#46692#46693#0" expanded="false" />
+            <element signature="e#46739#46740#0" expanded="false" />
+            <element signature="e#48181#48182#0" expanded="false" />
+            <element signature="e#48230#48231#0" expanded="false" />
+            <element signature="e#48867#48875#0" expanded="false" />
+            <element signature="e#50403#50411#0" expanded="false" />
+            <element signature="e#56092#56093#0" expanded="false" />
+            <element signature="e#56136#56137#0" expanded="false" />
+            <element signature="e#57001#57002#0" expanded="false" />
+            <element signature="e#57039#57040#0" expanded="false" />
+            <element signature="e#63675#63676#0" expanded="false" />
+            <element signature="e#63722#63723#0" expanded="false" />
+            <element signature="e#63751#63752#0" expanded="false" />
+            <element signature="e#63787#63788#0" expanded="false" />
+            <element signature="e#64786#64787#0" expanded="false" />
+            <element signature="e#64843#64844#0" expanded="false" />
+            <element signature="e#65018#65019#0" expanded="false" />
+            <element signature="e#65074#65075#0" expanded="false" />
+            <element signature="e#65249#65250#0" expanded="false" />
+            <element signature="e#65305#65306#0" expanded="false" />
+            <element signature="e#66126#66127#0" expanded="false" />
+            <element signature="e#66177#66178#0" expanded="false" />
+            <element signature="e#66232#66233#0" expanded="false" />
+            <element signature="e#66275#66276#0" expanded="false" />
+            <element signature="e#66777#66778#0" expanded="false" />
+            <element signature="e#66824#66825#0" expanded="false" />
+            <element signature="e#70614#70615#0" expanded="false" />
+            <element signature="e#70670#70671#0" expanded="false" />
+            <element signature="e#70849#70850#0" expanded="false" />
+            <element signature="e#70905#70906#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-23/java/net/URL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="74" column="19" selection-start-line="74" selection-start-column="19" selection-end-line="74" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-23/java/io/ByteArrayOutputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="36" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
+          <folding>
+            <element signature="e#1663#1664#0" expanded="false" />
+            <element signature="e#1697#1698#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-23/java/io/InputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="111" column="16" selection-start-line="111" selection-start-column="16" selection-end-line="111" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-23/java/io/OutputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="47" column="22" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="22" />
           <folding />
         </state>
       </provider>
@@ -2453,107 +2871,110 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/component/HomeActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <caret line="53" column="42" selection-start-line="53" selection-start-column="42" selection-end-line="53" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-23/android/widget/ArrayAdapter.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp/okhttp/2.5.0/cd4ddf1fb4ad84ea5d67ee3b386aea25f02ea096/okhttp-2.5.0-sources.jar!/com/squareup/okhttp/Response.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="174" column="11" selection-start-line="174" selection-start-column="11" selection-end-line="174" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Android/sdk/platforms/android-23/data/res/layout/simple_list_item_1.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-23/android/widget/AbsListView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4778" column="9" selection-start-line="4778" selection-start-column="9" selection-end-line="4778" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-23/android/widget/ListView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="936" column="25" selection-start-line="936" selection-start-column="25" selection-end-line="936" selection-end-column="25" />
+          <caret line="86" column="13" selection-start-line="86" selection-start-column="13" selection-end-line="86" selection-end-column="13" />
           <folding>
-            <element signature="e#33907#33908#0" expanded="false" />
-            <element signature="e#33957#33958#0" expanded="false" />
+            <element signature="e#3137#3138#0" expanded="false" />
+            <element signature="e#3158#3159#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/view/DemoCustomView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.39375">
-          <caret line="121" column="5" selection-start-line="94" selection-start-column="4" selection-end-line="121" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/component/DemoFrgContainerActivity.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.6.0/fb6ec0fbaa0229088b0d3dfe3b1f9d24add3e775/okio-1.6.0-sources.jar!/okio/BufferedSource.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
+          <caret line="103" column="9" selection-start-line="103" selection-start-column="9" selection-end-line="103" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-23/android/view/ViewDebug.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp/okhttp/2.5.0/cd4ddf1fb4ad84ea5d67ee3b386aea25f02ea096/okhttp-2.5.0-sources.jar!/com/squareup/okhttp/ResponseBody.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="210" column="22" selection-start-line="210" selection-start-column="22" selection-end-line="210" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-23/android/widget/Scroller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="385" column="64" selection-start-line="385" selection-start-column="64" selection-end-line="385" selection-end-column="64" />
+          <caret line="48" column="19" selection-start-line="48" selection-start-column="19" selection-end-line="48" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/net/HttpUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.1111112">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="80" column="27" selection-start-line="80" selection-start-column="27" selection-end-line="80" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-23/android/os/Handler.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/component/base/BaseLoadFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="615" column="0" selection-start-line="615" selection-start-column="0" selection-end-line="615" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-23/android/os/MessageQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-23/android/view/animation/Animation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="571" column="16" selection-start-line="571" selection-start-column="16" selection-end-line="571" selection-end-column="16" />
+          <caret line="48" column="12" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
           <folding>
-            <element signature="e#18968#18969#0" expanded="false" />
-            <element signature="e#19010#19011#0" expanded="false" />
+            <element signature="e#1335#1564#0" expanded="true" />
+            <element signature="e#1563#1564#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/component/base/BaseFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/component/base/BaseActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="133" column="18" selection-start-line="133" selection-start-column="18" selection-end-line="133" selection-end-column="18" />
+          <folding>
+            <element signature="e#3608#3609#0" expanded="true" />
+            <element signature="e#3639#3640#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Library/Android/sdk/extras/android/m2repository/com/android/support/support-v4/23.1.1/support-v4-23.1.1-sources.jar!/android/support/v4/util/LruCache.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.666667">
+          <caret line="42" column="21" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="21" />
+          <folding>
+            <element signature="e#9087#9088#0" expanded="true" />
+            <element signature="e#9114#9115#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-23/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1536" column="74" selection-start-line="1536" selection-start-column="74" selection-end-line="1536" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-23/java/util/Formatter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="234" column="31" selection-start-line="234" selection-start-column="31" selection-end-line="234" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-23/android/view/ViewParent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#27298#0" expanded="false" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2561,103 +2982,52 @@
     <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-23/android/view/ViewGroup.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="638" column="77" selection-start-line="638" selection-start-column="77" selection-end-line="638" selection-end-column="77" />
-          <folding>
-            <element signature="e#156324#156325#0" expanded="false" />
-            <element signature="e#156358#156359#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-23/android/content/Context.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="541" column="28" selection-start-line="541" selection-start-column="28" selection-end-line="541" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-23/android/widget/RelativeLayout.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.71875">
-          <caret line="83" column="40" selection-start-line="83" selection-start-column="40" selection-end-line="83" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Android/sdk/platforms/android-23/data/res/values/attrs.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29583332">
-          <caret line="6885" column="20" selection-start-line="6885" selection-start-column="20" selection-end-line="6885" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-23/android/view/RenderNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.50625">
-          <caret line="499" column="19" selection-start-line="499" selection-start-column="19" selection-end-line="499" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#295920#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-23/android/view/View.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="14035" column="41" selection-start-line="14035" selection-start-column="41" selection-end-line="14035" selection-end-column="41" />
+          <caret line="18760" column="22" selection-start-line="18760" selection-start-column="22" selection-end-line="18760" selection-end-column="22" />
           <folding>
-            <element signature="e#0#876728#0" expanded="false" />
+            <element signature="e#425905#425906#0" expanded="true" />
+            <element signature="e#425935#425936#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-23/android/content/res/Resources.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32235938">
-          <caret line="794" column="70" selection-start-line="794" selection-start-column="70" selection-end-line="794" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-23/android/widget/LinearLayout.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5185185">
-          <caret line="1886" column="24" selection-start-line="1886" selection-start-column="24" selection-end-line="1886" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/utils/DemoUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30864197">
-          <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.9444444">
-          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/utils/LogUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="36" column="59" selection-start-line="36" selection-start-column="59" selection-end-line="36" selection-end-column="59" />
+          <caret line="59" column="36" selection-start-line="59" selection-start-column="36" selection-end-line="59" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/libraries/dropdown_lib_1_0_0.xml">
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-23/android/graphics/BitmapFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.07133059">
+          <caret line="512" column="25" selection-start-line="512" selection-start-column="25" selection-end-line="512" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/component/frg/DemoImageLoadFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="90" column="50" selection-start-line="90" selection-start-column="50" selection-end-line="90" selection-end-column="50" />
+          <folding>
+            <element signature="e#6161#6340#0" expanded="true" />
+            <element signature="e#6339#6340#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/libraries/dropdown_lib_1_0_1.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -2665,277 +3035,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/attrs.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.07109005">
-          <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-23/android/widget/TextView.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/bitmap/ImageResizer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="2883" column="52" selection-start-line="2882" selection-start-column="61" selection-end-line="2883" selection-end-column="52" />
-          <folding>
-            <element signature="e#0#380970#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#26586#26587#0" expanded="false" />
-            <element signature="e#26621#26622#0" expanded="false" />
-            <element signature="e#63358#63359#0" expanded="false" />
-            <element signature="e#63386#63387#0" expanded="false" />
-            <element signature="e#63531#63532#0" expanded="false" />
-            <element signature="e#63558#63559#0" expanded="false" />
-            <element signature="e#64096#64097#0" expanded="false" />
-            <element signature="e#64124#64125#0" expanded="false" />
-            <element signature="e#64246#64247#0" expanded="false" />
-            <element signature="e#64283#64284#0" expanded="false" />
-            <element signature="e#65170#65171#0" expanded="false" />
-            <element signature="e#65200#65201#0" expanded="false" />
-            <element signature="e#65358#65359#0" expanded="false" />
-            <element signature="e#65392#65393#0" expanded="false" />
-            <element signature="e#70320#70321#0" expanded="false" />
-            <element signature="e#70352#70353#0" expanded="false" />
-            <element signature="e#72139#72140#0" expanded="false" />
-            <element signature="e#72177#72178#0" expanded="false" />
-            <element signature="e#78447#78448#0" expanded="false" />
-            <element signature="e#78494#78495#0" expanded="false" />
-            <element signature="e#78647#78648#0" expanded="false" />
-            <element signature="e#78695#78696#0" expanded="false" />
-            <element signature="e#78848#78849#0" expanded="false" />
-            <element signature="e#78896#78897#0" expanded="false" />
-            <element signature="e#79043#79044#0" expanded="false" />
-            <element signature="e#79089#79090#0" expanded="false" />
-            <element signature="e#79345#79346#0" expanded="false" />
-            <element signature="e#79417#79418#0" expanded="false" />
-            <element signature="e#104215#104216#0" expanded="false" />
-            <element signature="e#104251#104252#0" expanded="false" />
-            <element signature="e#104886#104887#0" expanded="false" />
-            <element signature="e#104936#104937#0" expanded="false" />
-            <element signature="e#108087#108088#0" expanded="false" />
-            <element signature="e#108136#108137#0" expanded="false" />
-            <element signature="e#109075#109076#0" expanded="false" />
-            <element signature="e#109122#109123#0" expanded="false" />
-            <element signature="e#109329#109330#0" expanded="false" />
-            <element signature="e#109397#109398#0" expanded="false" />
-            <element signature="e#111520#111521#0" expanded="false" />
-            <element signature="e#111569#111570#0" expanded="false" />
-            <element signature="e#113255#113256#0" expanded="false" />
-            <element signature="e#113302#113303#0" expanded="false" />
-            <element signature="e#113747#113748#0" expanded="false" />
-            <element signature="e#113803#113804#0" expanded="false" />
-            <element signature="e#114043#114044#0" expanded="false" />
-            <element signature="e#114095#114096#0" expanded="false" />
-            <element signature="e#115025#115026#0" expanded="false" />
-            <element signature="e#115083#115084#0" expanded="false" />
-            <element signature="e#115974#115975#0" expanded="false" />
-            <element signature="e#116011#116012#0" expanded="false" />
-            <element signature="e#116859#116860#0" expanded="false" />
-            <element signature="e#116903#116904#0" expanded="false" />
-            <element signature="e#118986#118987#0" expanded="false" />
-            <element signature="e#119019#119020#0" expanded="false" />
-            <element signature="e#119214#119215#0" expanded="false" />
-            <element signature="e#119250#119251#0" expanded="false" />
-            <element signature="e#119864#119865#0" expanded="false" />
-            <element signature="e#119902#119903#0" expanded="false" />
-            <element signature="e#121940#121941#0" expanded="false" />
-            <element signature="e#121976#121977#0" expanded="false" />
-            <element signature="e#122206#122207#0" expanded="false" />
-            <element signature="e#122238#122239#0" expanded="false" />
-            <element signature="e#122466#122467#0" expanded="false" />
-            <element signature="e#122498#122499#0" expanded="false" />
-            <element signature="e#122734#122735#0" expanded="false" />
-            <element signature="e#122769#122770#0" expanded="false" />
-            <element signature="e#122956#122957#0" expanded="false" />
-            <element signature="e#122989#122990#0" expanded="false" />
-            <element signature="e#123299#123300#0" expanded="false" />
-            <element signature="e#123335#123336#0" expanded="false" />
-            <element signature="e#123751#123752#0" expanded="false" />
-            <element signature="e#123792#123793#0" expanded="false" />
-            <element signature="e#124161#124162#0" expanded="false" />
-            <element signature="e#124199#124200#0" expanded="false" />
-            <element signature="e#126083#126084#0" expanded="false" />
-            <element signature="e#126120#126121#0" expanded="false" />
-            <element signature="e#127584#127585#0" expanded="false" />
-            <element signature="e#127621#127622#0" expanded="false" />
-            <element signature="e#129184#129185#0" expanded="false" />
-            <element signature="e#129215#129216#0" expanded="false" />
-            <element signature="e#129362#129363#0" expanded="false" />
-            <element signature="e#129406#129407#0" expanded="false" />
-            <element signature="e#130744#130745#0" expanded="false" />
-            <element signature="e#130789#130790#0" expanded="false" />
-            <element signature="e#131617#131618#0" expanded="false" />
-            <element signature="e#131673#131674#0" expanded="false" />
-            <element signature="e#132437#132438#0" expanded="false" />
-            <element signature="e#132494#132495#0" expanded="false" />
-            <element signature="e#133231#133232#0" expanded="false" />
-            <element signature="e#133287#133288#0" expanded="false" />
-            <element signature="e#134135#134136#0" expanded="false" />
-            <element signature="e#134192#134193#0" expanded="false" />
-            <element signature="e#135932#135933#0" expanded="false" />
-            <element signature="e#135992#135993#0" expanded="false" />
-            <element signature="e#136676#136677#0" expanded="false" />
-            <element signature="e#136739#136740#0" expanded="false" />
-            <element signature="e#137412#137413#0" expanded="false" />
-            <element signature="e#137472#137473#0" expanded="false" />
-            <element signature="e#138155#138156#0" expanded="false" />
-            <element signature="e#138218#138219#0" expanded="false" />
-            <element signature="e#140237#140238#0" expanded="false" />
-            <element signature="e#140272#140273#0" expanded="false" />
-            <element signature="e#140628#140629#0" expanded="false" />
-            <element signature="e#140662#140663#0" expanded="false" />
-            <element signature="e#140898#140899#0" expanded="false" />
-            <element signature="e#140944#140945#0" expanded="false" />
-            <element signature="e#146870#147089#0" expanded="false" />
-            <element signature="e#147088#147089#0" expanded="false" />
-            <element signature="e#148002#148003#0" expanded="false" />
-            <element signature="e#148044#148045#0" expanded="false" />
-            <element signature="e#148310#148311#0" expanded="false" />
-            <element signature="e#148345#148346#0" expanded="false" />
-            <element signature="e#149532#149533#0" expanded="false" />
-            <element signature="e#149574#149575#0" expanded="false" />
-            <element signature="e#149918#149919#0" expanded="false" />
-            <element signature="e#149969#149970#0" expanded="false" />
-            <element signature="e#159810#159811#0" expanded="false" />
-            <element signature="e#159838#159839#0" expanded="false" />
-            <element signature="e#159868#159869#0" expanded="false" />
-            <element signature="e#159902#159903#0" expanded="false" />
-            <element signature="e#177694#177695#0" expanded="false" />
-            <element signature="e#177756#177757#0" expanded="false" />
-            <element signature="e#181597#181598#0" expanded="false" />
-            <element signature="e#181628#181629#0" expanded="false" />
-            <element signature="e#192381#192382#0" expanded="false" />
-            <element signature="e#192444#192445#0" expanded="false" />
-            <element signature="e#192684#192685#0" expanded="false" />
-            <element signature="e#192751#192752#0" expanded="false" />
-            <element signature="e#192811#192812#0" expanded="false" />
-            <element signature="e#192878#192879#0" expanded="false" />
-            <element signature="e#203618#203619#0" expanded="false" />
-            <element signature="e#203642#203643#0" expanded="false" />
-            <element signature="e#213193#213194#0" expanded="false" />
-            <element signature="e#213260#213261#0" expanded="false" />
-            <element signature="e#239470#239471#0" expanded="false" />
-            <element signature="e#239531#239532#0" expanded="false" />
-            <element signature="e#239565#239566#0" expanded="false" />
-            <element signature="e#239624#239625#0" expanded="false" />
-            <element signature="e#240604#240605#0" expanded="false" />
-            <element signature="e#240632#240633#0" expanded="false" />
-            <element signature="e#254163#254300#0" expanded="false" />
-            <element signature="e#254299#254300#0" expanded="false" />
-            <element signature="e#255890#255891#0" expanded="false" />
-            <element signature="e#255924#255925#0" expanded="false" />
-            <element signature="e#280789#280790#0" expanded="false" />
-            <element signature="e#280847#280848#0" expanded="false" />
-            <element signature="e#281924#281925#0" expanded="false" />
-            <element signature="e#281985#281986#0" expanded="false" />
-            <element signature="e#282146#282147#0" expanded="false" />
-            <element signature="e#282205#282206#0" expanded="false" />
-            <element signature="e#283079#283080#0" expanded="false" />
-            <element signature="e#283114#283115#0" expanded="false" />
-            <element signature="e#287254#287255#0" expanded="false" />
-            <element signature="e#287304#287305#0" expanded="false" />
-            <element signature="e#287733#287734#0" expanded="false" />
-            <element signature="e#287775#287776#0" expanded="false" />
-            <element signature="e#287981#287982#0" expanded="false" />
-            <element signature="e#288014#288015#0" expanded="false" />
-            <element signature="e#311201#311202#0" expanded="false" />
-            <element signature="e#311270#311271#0" expanded="false" />
-            <element signature="e#311807#311808#0" expanded="false" />
-            <element signature="e#311836#311837#0" expanded="false" />
-            <element signature="e#323535#323536#0" expanded="false" />
-            <element signature="e#323563#323564#0" expanded="false" />
-            <element signature="e#324452#324596#0" expanded="false" />
-            <element signature="e#324595#324596#0" expanded="false" />
-            <element signature="e#326644#326645#0" expanded="false" />
-            <element signature="e#326691#326692#0" expanded="false" />
-            <element signature="e#352080#352081#0" expanded="false" />
-            <element signature="e#352139#352140#0" expanded="false" />
-            <element signature="e#352164#352165#0" expanded="false" />
-            <element signature="e#352223#352224#0" expanded="false" />
-            <element signature="e#352817#352818#0" expanded="false" />
-            <element signature="e#352849#352850#0" expanded="false" />
-            <element signature="e#363777#363778#0" expanded="false" />
-            <element signature="e#363805#363806#0" expanded="false" />
-            <element signature="e#365330#365331#0" expanded="false" />
-            <element signature="e#365372#365373#0" expanded="false" />
-            <element signature="e#365460#365461#0" expanded="false" />
-            <element signature="e#365487#365488#0" expanded="false" />
-            <element signature="e#365579#365580#0" expanded="false" />
-            <element signature="e#365619#365620#0" expanded="false" />
-            <element signature="e#367778#367779#0" expanded="false" />
-            <element signature="e#367819#367820#0" expanded="false" />
-            <element signature="e#369104#369105#0" expanded="false" />
-            <element signature="e#369161#369162#0" expanded="false" />
-            <element signature="e#369215#369216#0" expanded="false" />
-            <element signature="e#369274#369275#0" expanded="false" />
-            <element signature="e#370331#370332#0" expanded="false" />
-            <element signature="e#370369#370370#0" expanded="false" />
-            <element signature="e#370408#370409#0" expanded="false" />
-            <element signature="e#370459#370460#0" expanded="false" />
-            <element signature="e#370513#370514#0" expanded="false" />
-            <element signature="e#370579#370580#0" expanded="false" />
-            <element signature="e#374233#374393#0" expanded="false" />
-            <element signature="e#374392#374393#0" expanded="false" />
-            <element signature="e#374457#374726#0" expanded="false" />
-            <element signature="e#374725#374726#0" expanded="false" />
-            <element signature="e#374792#375144#0" expanded="false" />
-            <element signature="e#375143#375144#0" expanded="false" />
-            <element signature="e#377663#377664#0" expanded="false" />
-            <element signature="e#377706#377707#0" expanded="false" />
-            <element signature="e#377735#377736#0" expanded="false" />
-            <element signature="e#377773#377774#0" expanded="false" />
-            <element signature="e#377809#377810#0" expanded="false" />
-            <element signature="e#377854#377855#0" expanded="false" />
-            <element signature="e#377894#377895#0" expanded="false" />
-            <element signature="e#377945#377946#0" expanded="false" />
-            <element signature="e#377982#377983#0" expanded="false" />
-            <element signature="e#378064#378065#0" expanded="false" />
-            <element signature="e#378095#378096#0" expanded="false" />
-            <element signature="e#378152#378153#0" expanded="false" />
-            <element signature="e#378183#378184#0" expanded="false" />
-            <element signature="e#378240#378241#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/dimens.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/BaseApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/frg_custom_view.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.29771">
-          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/opticalix/opticalixtemplate/component/frg/DemoCustomViewFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.532294">
-          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1357#1516#0" expanded="true" />
-            <element signature="e#1515#1516#0" expanded="true" />
-            <element signature="e#2316#2906#0" expanded="true" />
-            <element signature="e#2905#2906#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/app.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="105" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
