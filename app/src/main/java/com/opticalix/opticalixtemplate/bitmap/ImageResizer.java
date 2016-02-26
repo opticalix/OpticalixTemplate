@@ -4,7 +4,6 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.util.Log;
 
-import com.opticalix.opticalixtemplate.utils.LogUtils;
 
 /**
  * Created by opticalix@gmail.com on 16/2/26.
