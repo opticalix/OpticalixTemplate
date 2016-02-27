@@ -1,6 +1,8 @@
 package com.opticalix.opticalixtemplate.utils;
 
 import android.content.Context;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
 import android.support.annotation.NonNull;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
