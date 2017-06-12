@@ -18,4 +18,41 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Demo"/>
+    <RelativeLayout
+        android:id="@+id/rl_test_1"
+        android:layout_below="@id/tv_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/et_test_1"
+            android:background="@color/colorPrimary"
+            android:padding="10dp"
+            android:imeOptions="actionNext"
+            android:nextFocusForward="@+id/et_test_2"
+            android:lines="1"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@id/rl_test_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/et_test_2"
+            android:lines="1"
+            android:background="@color/colorPrimary"
+            android:padding="10dp"
+            android:imeOptions="actionDone"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
 </RelativeLayout>
