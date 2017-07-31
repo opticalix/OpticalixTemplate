@@ -1,8 +1,6 @@
 package com.opticalix.opticalixtemplate.utils;
 
 import android.content.Context;
-import android.content.pm.PackageInfo;
-import android.content.pm.PackageManager;
 import android.support.annotation.NonNull;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
@@ -12,6 +10,7 @@ import com.opticalix.opticalixtemplate.model.SimpleText;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 /**
  * Created by opticalix@gmail.com on 16/1/5.
@@ -41,6 +40,10 @@ public class DemoUtils {
         simpleTextListAdapter.addToModelList(data);
         listView.setAdapter(simpleTextListAdapter);
         return listView;
+    }
+
+    public static boolean randomBoolean() {
+        return new Random().nextInt() % 2 == 0;
     }
 
 }

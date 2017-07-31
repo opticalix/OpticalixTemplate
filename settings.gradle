@@ -1,1 +1,4 @@
 include ':app'
+
+include ':ucrop'
+project(':ucrop').projectDir = new File('../PictureSelector/ucrop/')
