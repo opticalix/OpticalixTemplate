@@ -2,7 +2,6 @@ package com.opticalix.opticalixtemplate.view.crop;
 
 import android.content.Context;
 import android.graphics.Canvas;
-import android.graphics.Color;
 import android.graphics.RectF;
 import android.support.annotation.Nullable;
 import android.support.v4.view.ViewCompat;
@@ -24,8 +23,6 @@ public class CropOverlay extends View {
     private int mOrientation;
     private float mStartPosition;
     private float mEndPosition;
-    public static int ORIENTATION_HORIZONTAL = 1;
-    public static int ORIENTATION_VERTICAL = 2;
     private float mDownRawX;
     private float mDownRawY;
     private float mPrevRawX;
@@ -52,8 +49,16 @@ public class CropOverlay extends View {
         mOrientation = orientation;
     }
 
-    public void setFrame(RectF rectf) {
-        mFrameRect = rectf;
+    public int getOrientation() {
+        return mOrientation;
+    }
+
+    /**
+     * overlay可移动的区域
+     * @param rectF
+     */
+    public void setFrame(RectF rectF) {
+        mFrameRect = rectF;
     }
 
     public void setStartPosition(float pos) {
@@ -64,16 +69,9 @@ public class CropOverlay extends View {
         mEndPosition = pos;
     }
 
-    public int getOrientation() {
-        return mOrientation;
-    }
-
-    public float getStartPosition() {
-        return mStartPosition;
-    }
-
-    public float getEndPosition() {
-        return mEndPosition;
+    public int getOffset() {
+        int startPos = Math.round(mStartPosition);
+        return mOrientation == CalcOffsetView.ORIENTATION_HORIZONTAL ? (getLeft() - startPos) : (getTop() - startPos);
     }
 
     @Override
@@ -95,7 +93,7 @@ public class CropOverlay extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        canvas.drawColor(Color.BLUE);
+        canvas.drawARGB(50, 0, 0, 0);
     }
 
     @Override
@@ -113,21 +111,19 @@ public class CropOverlay extends View {
                 float dX = rawX - mPrevRawX;
                 float dY = rawY - mPrevRawY;
 
-                if (checkMoveValid(dX, dY)) {
-                    if (mOrientation == ORIENTATION_HORIZONTAL) {
-                        ViewCompat.offsetLeftAndRight(this, (int) dX);
-                    } else {
-                        ViewCompat.offsetTopAndBottom(this, (int) dY);
-                    }
-                    mPrevRawX = rawX;
-                    mPrevRawY = rawY;
-                    return true;
+                int[] correctDelta = correctDelta(dX, dY);
+                if (mOrientation == CalcOffsetView.ORIENTATION_HORIZONTAL) {
+                    ViewCompat.offsetLeftAndRight(this, correctDelta[0]);
+                } else {
+                    ViewCompat.offsetTopAndBottom(this, correctDelta[1]);
                 }
-                return false;
+                mPrevRawX = rawX;
+                mPrevRawY = rawY;
+                return true;
             case MotionEvent.ACTION_UP:
             case MotionEvent.ACTION_CANCEL:
-                float startPos = mOrientation == ORIENTATION_HORIZONTAL ? mDownRawX : mDownRawY;
-                float endPos = mOrientation == ORIENTATION_HORIZONTAL ? event.getRawX() : event.getRawY();
+                float startPos = mOrientation == CalcOffsetView.ORIENTATION_HORIZONTAL ? mDownRawX : mDownRawY;
+                float endPos = mOrientation == CalcOffsetView.ORIENTATION_HORIZONTAL ? event.getRawX() : event.getRawY();
                 LogUtils.d(TAG, String.format(Locale.getDefault(), "move distance: %d", (int) (endPos - startPos)));
                 return true;
         }
@@ -135,11 +131,31 @@ public class CropOverlay extends View {
     }
 
     private boolean checkMoveValid(float dX, float dY) {
-        if (mOrientation == ORIENTATION_HORIZONTAL) {
-            //fixme
+        if (mOrientation == CalcOffsetView.ORIENTATION_HORIZONTAL) {
             return (this.getLeft() + dX) >= mStartPosition && (this.getRight() + dX) <= mEndPosition;
         } else {
             return (this.getTop() + dY) >= mStartPosition && (this.getBottom() + dY) <= mEndPosition;
         }
+    }
+
+    private int[] correctDelta(float dX, float dY) {
+        int[] ret = new int[]{Math.round(dX), Math.round(dY)};
+        int l = getLeft();
+        int r = getRight();
+        int t = getTop();
+        int b = getBottom();
+        if (dX < 0 && l + dX < mStartPosition) {
+            ret[0] = (int) (mStartPosition - l + 0.5f);
+        }
+        if (dX > 0 && r + dX > mEndPosition) {
+            ret[0] = (int) (mEndPosition - r + 0.5f);
+        }
+        if (dY < 0 && t + dY < mStartPosition) {
+            ret[1] = (int) (mStartPosition - t + 0.5f);
+        }
+        if (dY > 0 && b + dY > mEndPosition) {
+            ret[1] = (int) (mEndPosition - b + 0.5f);
+        }
+        return ret;
     }
 }

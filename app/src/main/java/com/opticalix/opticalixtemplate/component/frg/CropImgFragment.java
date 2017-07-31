@@ -5,15 +5,18 @@ import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import com.opticalix.opticalixtemplate.R;
 import com.opticalix.opticalixtemplate.component.base.BaseFragment;
 import com.opticalix.opticalixtemplate.utils.DemoUtils;
 import com.opticalix.opticalixtemplate.utils.LogUtils;
+import com.opticalix.opticalixtemplate.utils.ToastUtils;
 import com.opticalix.opticalixtemplate.view.crop.CalcOffsetView;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 /**
  * Created by Felix on 2017/07/31.
@@ -23,6 +26,8 @@ public class CropImgFragment extends BaseFragment {
     public static final String LARGE_VERTICAL_PIC_URL = "http://youimg1.c-ctrip.com/target/tg/623/693/247/78831cc2f56d4e0abb2c5be3b6f53efa.jpg";
     @Bind(R.id.calc_view)
     CalcOffsetView mCalcView;
+    @Bind(R.id.btn_offset)
+    Button mBtnOffset;
 
 
     public static CropImgFragment newInstance() {
@@ -49,5 +54,10 @@ public class CropImgFragment extends BaseFragment {
     public void onDestroyView() {
         super.onDestroyView();
         ButterKnife.unbind(this);
+    }
+
+    @OnClick(R.id.btn_offset)
+    public void onBtnClick() {
+        ToastUtils.showShort(getActivity(), "offset="+mCalcView.getOffset()+", orientation="+mCalcView.getOrientation());
     }
 }

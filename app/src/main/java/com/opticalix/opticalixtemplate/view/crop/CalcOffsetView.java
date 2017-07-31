@@ -23,6 +23,8 @@ import java.util.Arrays;
  */
 public class CalcOffsetView extends RelativeLayout {
     private static final String TAG = CalcOffsetView.class.getSimpleName();
+    public static int ORIENTATION_HORIZONTAL = 1;
+    public static int ORIENTATION_VERTICAL = 2;
     ImageView mIv;
     CropOverlay mCropOverlay;
     private int[] mRealImgPositions;
@@ -57,14 +59,13 @@ public class CalcOffsetView extends RelativeLayout {
         mCropOverlay.setOrientation(judgeOrientation());
         RectF rectF = new RectF(mRealImgPositions[0], mRealImgPositions[1], mRealImgPositions[0] + mRealImgPositions[2], mRealImgPositions[1] + mRealImgPositions[3]);
         mCropOverlay.setFrame(rectF);
-        mCropOverlay.setStartPosition(judgeOrientation() == CropOverlay.ORIENTATION_HORIZONTAL ? mRealImgPositions[0] : mRealImgPositions[1]);
-        mCropOverlay.setEndPosition(judgeOrientation() == CropOverlay.ORIENTATION_HORIZONTAL ? mRealImgPositions[2] : mRealImgPositions[3]);
+        mCropOverlay.setStartPosition(judgeOrientation() == ORIENTATION_HORIZONTAL ? mRealImgPositions[0] : mRealImgPositions[1]);
+        mCropOverlay.setEndPosition(judgeOrientation() == ORIENTATION_HORIZONTAL ? mRealImgPositions[2] : mRealImgPositions[3]);
         requestLayout();
     }
 
     private int judgeOrientation() {
-        //FIXME
-        return mRealImgPositions[0] == 0 ? CropOverlay.ORIENTATION_HORIZONTAL : CropOverlay.ORIENTATION_VERTICAL;
+        return mRealImgPositions[2] > mRealImgPositions[3] ? ORIENTATION_HORIZONTAL : ORIENTATION_VERTICAL;
     }
 
     @Override
@@ -89,7 +90,7 @@ public class CalcOffsetView extends RelativeLayout {
                 if (!isRealImgPositionsReady()) {
                     return;
                 }
-                if (judgeOrientation() == CropOverlay.ORIENTATION_HORIZONTAL) {
+                if (judgeOrientation() == ORIENTATION_HORIZONTAL) {
                     child.layout(mRealImgPositions[0], mRealImgPositions[1],
                             mRealImgPositions[0] + measuredWidth, mRealImgPositions[1] + mRealImgPositions[3]);
                 } else {
@@ -105,7 +106,7 @@ public class CalcOffsetView extends RelativeLayout {
      * @param imageView source ImageView
      * @return 0: left, 1: top, 2: width, 3: height
      */
-    public static int[] getBitmapPositionInsideImageView(ImageView imageView) {
+    private int[] getBitmapPositionInsideImageView(ImageView imageView) {
         int[] ret = new int[4];
 
         if (imageView == null || imageView.getDrawable() == null)
@@ -147,33 +148,15 @@ public class CalcOffsetView extends RelativeLayout {
     }
 
     public void setImageUrl(String url) {
-//        RequestManager manager = Glide.with(getContext());
-//        manager.clear(mIv);
-//        manager.load(url).listener(new RequestListener<Drawable>() {
-//            @Override
-//            public boolean onLoadFailed(@Nullable GlideException e, Object model, Target<Drawable> target, boolean isFirstResource) {
-//                return false;
-//            }
-//
-//            @Override
-//            public boolean onResourceReady(Drawable resource, Object model, Target<Drawable> target, DataSource dataSource, boolean isFirstResource) {
-//                return postDelayed(new Runnable() {
-//                    @Override
-//                    public void run() {
-//                        setupCropOverlay();
-//                    }
-//                }, 500);
-//            }
-//        }).into(mIv);
         Picasso.with(getContext()).load(Uri.parse(url)).into(mIv, new com.squareup.picasso.Callback() {
             @Override
             public void onSuccess() {
-                postDelayed(new Runnable() {
+                post(new Runnable() {
                     @Override
                     public void run() {
                         setupCropOverlay();
                     }
-                }, 500);
+                });
             }
 
             @Override
@@ -181,5 +164,13 @@ public class CalcOffsetView extends RelativeLayout {
 
             }
         });
+    }
+
+    public int getOffset() {
+        return mCropOverlay.getOffset();
+    }
+
+    public int getOrientation() {
+        return mCropOverlay.getOrientation();
     }
 }
