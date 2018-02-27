@@ -5,8 +5,6 @@
       <root url="file://$USER_HOME$/.android/build-cache/f5ffc5270a88970bc221e8706321460f8e373599/output/res" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.leakcanary/leakcanary-android/1.3.1/bfce6225a7f7b9df2e9955454b71613027fa64b1/leakcanary-android-1.3.1-sources.jar!/" />
-    </SOURCES>
+    <SOURCES />
   </library>
 </component>

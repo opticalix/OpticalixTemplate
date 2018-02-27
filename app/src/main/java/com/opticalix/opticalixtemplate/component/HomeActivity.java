@@ -9,6 +9,7 @@ import android.widget.TextView;
 import com.opticalix.opticalixtemplate.R;
 import com.opticalix.opticalixtemplate.component.base.BaseActivity;
 import com.opticalix.opticalixtemplate.component.frg.CropImgFragment;
+import com.opticalix.opticalixtemplate.component.frg.ZeppDemoFragment;
 import com.opticalix.opticalixtemplate.model.GlobalConfig;
 import com.opticalix.opticalixtemplate.utils.AssetsUtils;
 import com.opticalix.opticalixtemplate.utils.LogUtils;
@@ -63,7 +64,7 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener {
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.tv_button:
-                enterDemoActivity(CropImgFragment.class);
+                enterDemoActivity(ZeppDemoFragment.class);
                 break;
         }
     }
